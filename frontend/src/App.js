@@ -24,21 +24,24 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
         <div>ChitChat</div>
+        </header>
+        <div className='outerbox'>
         <div className='allchats'>
           {
             chat.map((payload,index)=>{
-              if(payload.userName==userName) return <p key={index} className="box-right">{payload.message}
+              if(payload.userName==userName) return <div key={index} className="box-right">{payload.message}
               <span> BY: {payload.userName}</span>
-              </p>
-              else return <p key={index} className="box-left">{payload.message}
+              </div>
+              else return <div key={index} className="box-left">{payload.message}
               <span> by: {payload.userName}</span>
-              </p>
+              </div>
               
             })
           }
-        </div>
-        <form onSubmit={send}>
+          </div>
+          <form onSubmit={send}>
           <input
             type='text'
             placeholder='type message'
@@ -48,7 +51,9 @@ function App() {
           />
           <button type='submit'>send</button>
         </form>
-      </header>
+        
+        </div>
+      
     </div>
   );
 }

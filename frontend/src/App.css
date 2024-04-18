@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #5b616d;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.outerbox{
+  background-color: #282c34;
+}
+.allchats{
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+
+input,button{
+  font-size: larger;
+}
+input{
+  width:955px
+}
+.box-right{
+  background-color: rgb(40, 187, 210);
+  padding: 15px;
+  border-radius: 15px;
+  color: black;
+  float: right;
+}
+.box-left{
+  background-color: rgb(107, 228, 109);
+  padding: 15px;
+  border-radius: 15px;
+  color: black;
+  float: left;
+}
